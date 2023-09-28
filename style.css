@@ -1,0 +1,377 @@
+*{
+    margin=0;
+    padding=0;
+    
+}
+.header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.1),rgba(4,9,30,10)),url(IMAGESDIP/IMAGEWP.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150 ;
+    height: 50 ;
+    position:center;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width :0%;
+    height : 2px;
+    background: #000000;
+    display : block;
+    margin : auto;
+    transition: 0.56;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 40px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: darkgray;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hero-btn:hover{
+    border: 2px; solid #ffffff ;
+    background: #808080;
+    transition: 2s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+        
+    }
+    .nav-links{
+        position: fixed;
+        background: #808080;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size :22px;
+        cursor: pointer;
+        
+    }
+}
+.nav-links ul{
+    padding: 30px;
+}
+
+/*Course*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+p{
+    color: olivedrab;
+    font-size: 34;
+    font-weight: 300;
+    padding: 10px;
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.course-col{
+    flex-basis: 31%;
+    background-color: darkgrey;
+    border-radius: 10px;
+    margin-bottom: 20px 12px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    text-align: center;
+    font-weight: 520;
+    margin-left: 18px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px;
+}
+@media(max-width :700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* Campus Details*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+/*Author of this page*/
+.Author{
+    width: 60%;
+    margin: auto;
+    padding-top: 0px;
+    text-align: right;
+}
+
+.Author-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding:25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.Author-col img{
+    height: 90px;
+    width: 90px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 80%; 
+}
+.Author-col p{
+    padding: 0;
+}
+.Author-col h2{
+    margin-top: 15px;
+    text-align: right;
+}
+
+@media(max-width: 700px){
+    .Author-col img{  
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
+    /*call to action*/
+.cta{
+    margin: 100px auto;
+    width : 80%;    
+    background-image: linear-gradient(rgba(3,2,3,0.1),rgba(0,1,0,0.7)), url(IMAGESDIP/IMAGEWP.jpg);
+    background-position: center; 
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+        
+    }
+.cta h3{
+    color:#fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: : 3px 20px;
+    
+}
+.footer h2{
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: 600;
+}
+
+
+/*----------------About us page---------------------*/
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(1,9,30,0.09),rgba(4,9,30,10)),url(IMAGESDIP/IMAGEWP.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header h1{
+    margin-top: 50px;
+}
+
+.about-us{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+}
+.about-col{
+    flex-basis: 30%;
+    padding: 0px 20px;
+    
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+
+.red-btn{
+    border: 1px solid #f4436;
+    background: transparent;
+    color: darkslateblue;
+    
+}
+
+/*-------Blog Content----------*/
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-center{
+    flex-basis: 50%;
+    
+}
+.blog-center img{
+    width: 80%;
+}
+.blog-center h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 30px;
+    
+}
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: center;
+}
+.comment-form input, .comment-form textarea{
+    width: 50%;
+    padding: 10px;
+    mrgin: 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    
+}
+
+@media(max-width:700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+}
+/*----------contact us page-----------*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding:80px 0;
+    
+}
+
+.location iframe{
+    width: 100%;
+    
+}
+.contact-col{
+    align-items: center;
+    flex--basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div.fa{
+    flex-basis: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 10px;
+    mrgin: 15px 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Engineering Mathematics</title>
+        <link rel="stylesheet" href="style.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="IMAGESDIP/LOGO.png" width="150" height="50" align="center" ></a>
+                <div class="nav-links" id="navLinks">                    
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact us</h1>
+        </section>
+<!--Contact Us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244433.98165791878!2d81.9820572696912!3d16.812412100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38205e52dbce3d%3A0x794aa1538de4100f!2sKiet%20College!5e0!3m2!1sen!2sin!4v1683569412866!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>KIET Engineering College<br>Korangi</h5>
+                    <p>Thallarevu Mandal,Andhra Pradesh,India</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>9347132534</h5>
+                </span>
+            </div>           
+        </div>
+        <div class="contact-col">
+                    <form action="formhandler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your Name"><br><br>
+                    <input type="email" name="email" placeholder="Enter Email Address"><br><br>
+                    <input type="text" name="subject" placeholder="Enter your subject"><br><br>
+                    <textarea rows="5" name="message" placeholder="Message"></textarea><br><br>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+
+        </div>
+        </div>
+</section>
+<!--Footer-->
+        <section class="footer">
+            <h2>About us</h2>
+            <p>KIET GROUP OF INSTITUTIONS</p>
+        
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        
+        </div>
+        </section>
+<!------ Java Script for toggle menu------>
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+        
+        
+    </body>
+</html>

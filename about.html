@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Engineering Mathematics</title>
+        <link rel="stylesheet" href="style.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="IMAGESDIP/LOGO.png" width="150" height="50" align="center" ></a>
+                <div class="nav-links" id="navLinks">                    
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About us</h1>
+        </section>
+
+<!-- About us content-->
+<section class="about-us">
+    <a href=""class="hero-btn red-btn">EXPLORE NOW</a>
+    <div class="row">
+        <div class="about-col">
+            <h1>KIET</h1>
+            <p>This is the main branch of whole group of Institutions</p>
+            <img src="IMAGESDIP/KIET.jpg">
+        </div>
+        <div class="about-col">
+            <h1>KIEK</h1>
+            <p>This is the sub-campus of our KIET group of Institutions</p>
+            <img src="IMAGESDIP/KIEK.jpg">
+        </div>
+        <div class="about-col">
+            <h1>KIEW</h1>
+            <p>This campus is only for girls which have fully secured.</p>
+            <img src="IMAGESDIP/KIET-W.jpg">
+        </div>
+        
+    </div>
+    
+</section>
+        
+        
+<!--Footer-->
+        <section class="footer">
+            <h2>About us</h2>
+            <p>KIET GROUP OF INSTITUTIONS</p>
+        
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        
+        </div>
+        </section>
+<!------ Java Script for toggle menu------>
+        <script>
+            var navLinks= document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+        
+        
+    </body>
+</html>
